@@ -1,0 +1,14 @@
+package examSchedule;
+
+import java.util.Vector;
+
+public class Course {
+	
+	private Vector <Lecture> lecture;
+	private String name;
+	
+	public void addLecture(Lecture lecture) {
+		this.lecture.add(lecture);
+	};
+	
+}

@@ -1,0 +1,57 @@
+package examSchedule;
+import java.util.Vector;
+import java.util.Iterator;
+
+/**
+ * @author Group 4 - Mike Hung, Nick Pylypow, Jeremy Kyle Delima
+ * 
+ * 
+ */
+public class Course {
+
+	private Vector<Lecture> lectures;
+	private String name;
+	public Course(String name){
+	    this.name = name;
+	    lectures = new Vector<Lecture>();
+	}
+
+	public void addLecture(Lecture lecture) {
+	    lectures.add(lecture);
+	}
+
+	public boolean hasLecture(String lecture) {
+	    Iterator<Lecture> iter = lectures.iterator();
+	    while(iter.hasNext()) {
+	        if (iter.next().getName().equals(lecture)) {
+	            return true;
+	        }
+	    }
+	    return false;
+	}
+	
+	public Lecture findLecture(String lecture) {
+	    Iterator<Lecture> iter = lectures.iterator();
+	    while(iter.hasNext()) {
+	    	Lecture temp = iter.next();
+	        if (temp.getName().equals(lecture)) {
+	            return temp;
+	        }
+	    }
+	    return null;
+	}
+	
+	public String getName() {
+	    return name;
+	}
+	
+	public String toString() {
+		String course = "course(" + name + ", <";
+		
+		for (Lecture lecture : lectures) {
+			course += lecture.getName() + ", ";
+		}
+				
+		return course.substring(0, course.length()) + ">)";
+	}
+}

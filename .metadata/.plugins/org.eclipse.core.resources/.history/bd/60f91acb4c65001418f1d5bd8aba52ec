@@ -1,0 +1,5 @@
+package examSchedule;
+
+public class Instructor {
+
+}

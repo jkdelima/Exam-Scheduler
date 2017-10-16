@@ -1,0 +1,36 @@
+//Courses... 2
+course(CPSC433)
+course(CPSC599.68)
+//Instructors...1
+instructor(Kremer)
+Kremer instructs 3 classes.
+instruct(Kremer, <course(CPSC433), L01>, <course(CPSC433), L02>, <course(CPSC599.68), L01>)
+//Students... 3
+student(Alice)
+Alice takes 2 classes.
+enrolled(Alice, <course(CPSC433), L02>, <course(CPSC599.68), L01>)
+student(Bob)
+Bob takes 2 classes.
+enrolled(Bob, <course(CPSC433), L01>, <course(CPSC599.68), L01>)
+student(Carol)
+Carol takes 1 classes.
+enrolled(Carol, <course(CPSC433), L01>)
+//Days... 1
+Day(M1)
+//Rooms... 3
+room(JackSimpson, 2)
+room(RedGym , 2)
+room(GoldGym , 3)
+//Sessions... 6
+session(M1-08-G)
+assign(CPSC433, L01, M1-08-G)
+session(M1-11-G)
+assign(, , M1-11-G)
+session(M1-15-G)
+assign(, , M1-15-G)
+session(M1-18-G)
+assign(, , M1-18-G)
+session(M1-09-R)
+assign(, , M1-09-R)
+session(M1-08-J)
+assign(, , M1-08-J)

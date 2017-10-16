@@ -1,0 +1,24 @@
+package examSchedule;
+
+import java.util.Iterator;
+import java.util.Vector;
+
+public class Student {
+	
+	private Vector <String> names;	
+	public Student(){};
+	
+	public void addStudent(String student) {
+		this.names.add(student);
+	};
+	
+	public boolean contains(String student) {
+		Iterator<String> iter = names.iterator();
+		while(iter.hasNext()){
+			if(iter.next() == student){
+				return true;
+			}
+		}
+		return false;
+	}
+}

@@ -1,0 +1,15 @@
+package examSchedule;
+
+public class Session {
+
+	private char day;
+	private int time;
+	private Room room;
+
+	public Session(char day, int time, Room room) {
+		this.day = day;
+		this.time = time;
+		this.room  = room;
+	};
+	
+}

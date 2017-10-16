@@ -1,0 +1,7 @@
+package examSchedule;
+
+public class Room {
+
+	private int capacity = 0;
+	
+}

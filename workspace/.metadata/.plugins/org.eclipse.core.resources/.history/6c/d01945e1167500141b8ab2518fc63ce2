@@ -1,0 +1,98 @@
+package examSchedule;
+
+import java.util.Vector;
+import java.util.Iterator;
+
+/**
+ * @author Group 4 - Mike Hung, Nick Pylypow, Jeremy Kyle Delima
+ * This class creates the Lecture object for our project.
+ */
+public class Lecture {
+
+	private String course;
+	private String name;
+	private Instructor instructor;
+	private Long examLength;
+	private Vector<Student> students;
+	
+	/**
+	 * Lecture constructor.
+	 * @param name is the name of the lecture
+	 */
+	public Lecture(String name){
+		this.name = name;
+		course = new String("");
+	    instructor = new Instructor("");
+	    examLength = new Long(0);
+	    students = new Vector<Student>();
+	}
+	
+	/**
+	 * Lecture constructor.
+	 * @param course is the name of the course
+	 * @param name is the name of the lecture
+	 */
+	public Lecture(String course, String name) {
+	    this.course = course;
+	    this.name = name;
+	    instructor = new Instructor("");
+	    examLength = new Long(0);
+	    students = new Vector<Student>();
+	    
+	}
+	
+	public boolean hasStudent(String student) {
+        Iterator<Student> iter = students.iterator();
+        while (iter.hasNext()) {
+            if (iter.next().getName().equals(student)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public Student findStudent(String student) {
+        Iterator<Student> iter = students.iterator();
+        while (iter.hasNext()) {
+            if (iter.next().getName().equals(student)) {
+                return iter.next();
+            }
+        }
+        return null;
+    }
+
+    public void addStudent(Student student) {
+        students.add(student);
+        student.addLecture(this);
+    }
+
+    public String getName() {
+	    return name;
+	}
+
+	public String getCourse() {
+	    return course;
+	}
+
+	public Instructor getInstructor() {
+	    return this.instructor;
+	}
+
+	public Long getExamLength() {
+	    return examLength;
+	}
+
+	public void setInstructor(Instructor instructor){
+		this.instructor = instructor;
+		instructor.addLecture(this);
+	}
+
+	public void setExamLength(Long length){
+		this.examLength = length;
+	}
+	
+	public String toString() {
+		//return "lecture(" + course + ", " + name + ")";
+		return "lecture(" + course + ", " + name + ", " + instructor + ", " + examLength + ")";
+	}
+}

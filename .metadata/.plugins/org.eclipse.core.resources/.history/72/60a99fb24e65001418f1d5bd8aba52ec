@@ -1,0 +1,11 @@
+package examSchedule;
+
+import java.util.Vector;
+
+public class Instructor {
+
+	private Vector <String> names;
+	public Instructor(){};
+
+	
+}

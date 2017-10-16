@@ -1,0 +1,29 @@
+package examSchedule;
+
+public class Room {
+
+	private String name;
+	private Long capacity;
+	
+	public Room(String name){
+		this.name = name;
+		capacity = new Long(0);
+	}
+	
+	public String getName() {
+		return name;
+	}
+
+	public Long getCapacity() {
+		return capacity;
+	}
+
+	public void setCapacity(Long cap) {
+	    this.capacity = cap;	    
+	}
+	
+	public String toString() {
+		return "room(" + name + ", " + capacity + ")";
+	}
+	
+}

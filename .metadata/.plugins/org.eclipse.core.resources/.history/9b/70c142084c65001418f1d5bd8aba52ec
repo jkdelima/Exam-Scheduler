@@ -1,0 +1,8 @@
+package examSchedule;
+import java.util.Vector;
+
+public class Course {
+	
+	private Vector <Lecture> lectures;
+
+}

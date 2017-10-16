@@ -1,0 +1,19 @@
+package examSchedule;
+
+import java.util.Vector;
+
+public class Lecture {
+
+	private String name;
+	private String instructor;
+	private int examLength;
+	private Vector <String> students;
+	
+	public Lecture(String name) {
+		this.name = name;
+		instructor = new String();
+		int examLength = 0;
+		students = new Vector <String> ();
+	};
+	
+}

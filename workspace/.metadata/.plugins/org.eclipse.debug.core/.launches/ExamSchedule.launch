@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Scheduler/src/examSchedule/parser/ExamSchedule.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="examSchedule.parser.ExamSchedule"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="E:\workspace\Scheduler\src\examSchedule\input.txt 10000"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Scheduler"/>
+</launchConfiguration>

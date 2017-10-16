@@ -1,0 +1,9 @@
+package examSchedule;
+
+public class Instructor {
+
+	private Vector <String> names;
+	public Instructor(){};
+
+	
+}

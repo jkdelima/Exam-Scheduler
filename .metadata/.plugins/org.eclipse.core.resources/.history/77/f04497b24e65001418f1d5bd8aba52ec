@@ -1,0 +1,10 @@
+package examSchedule;
+
+import java.util.Vector;
+
+public class Student {
+	
+	private Vector <String> names;	
+	public Student(){};
+
+}

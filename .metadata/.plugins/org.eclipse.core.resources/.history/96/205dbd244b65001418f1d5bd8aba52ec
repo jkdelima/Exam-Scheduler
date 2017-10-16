@@ -1,0 +1,8 @@
+package examSchedule;
+
+public class Session {
+
+	private char day;
+	private int time;
+	
+}

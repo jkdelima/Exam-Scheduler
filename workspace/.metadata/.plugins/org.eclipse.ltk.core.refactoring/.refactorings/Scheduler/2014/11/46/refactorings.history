@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;env&apos; in &apos;examSchedule.parser.ExamSchedule.doSearch(...)&apos; to &apos;env2&apos;&#x0A;- Original project: &apos;Scheduler&apos;&#x0A;- Original element: &apos;examSchedule.parser.ExamSchedule.doSearch(EnvironmentInterface, String, long).env&apos;&#x0A;- Renamed element: &apos;env&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;env&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;examSchedule.parser{ExamSchedule.java[ExamSchedule~doSearch~QEnvironmentInterface;~QString;~J@env!4968!4997!4995!4997!QEnvironmentInterface;!16!true" name="env2" references="true" stamp="1415834263981" version="1.0"/>
+</session>

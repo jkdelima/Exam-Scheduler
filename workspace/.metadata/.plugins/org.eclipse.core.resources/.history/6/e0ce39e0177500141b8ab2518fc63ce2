@@ -1,0 +1,38 @@
+package examSchedule;
+
+/**
+ * @author Group 4 - Mike Hung, Nick Pylypow, Jeremy Kyle Delima
+ * This class creates the Room object for our project.
+ */
+public class Room {
+
+	private String name;
+	private Long capacity;
+	
+	/**
+	 * Room constructor.
+	 * @param name is the name of the room.
+	 */
+	public Room(String name){
+		this.name = name;
+		capacity = new Long(0);
+	}
+	
+	
+	public String getName() {
+		return name;
+	}
+
+	public Long getCapacity() {
+		return capacity;
+	}
+
+	public void setCapacity(Long cap) {
+	    this.capacity = cap;	    
+	}
+	
+	public String toString() {
+		return "room(" + name + ", " + capacity + ")";
+	}
+	
+}
